@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p th:text="${email}"></p>
+	<hr>
+	Loged in user Information
+	<p th:text="${email}"></p>
+	<p th:text="${role}"></p>
+	<p th:text="${username}"></p>
+	<br>
+	<hr>
+	
+	<table>
+		<thead>
+			<tr>Name
+			<tr>
+		</thead>
+		<tbody>
+			<tr th:each="User : ${usersList}">
+				<td th:text="${User.name}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<hr>
+	<h4>Loged in user Information</h4>
+	<p th:text="${email}"></p>
+	<p th:text="${role}"></p>
+	<p th:text="${username}"></p>
+	<br>
+	<hr>
+
+	<div th:object="${User}">
+		<br>
+		<h4>Selected User Information</h4>
+		<p th:text="${User.id}"></p>
+		<p th:text="${User.name}"></p>
+		<p th:text="${User.email}"></p>
+		<p th:text="${User.phoneNumber}"></p>
+		<p th:text="${User.department}"></p>
+		<p th:text="${User.createdOn}"></p>
+	</div>
+
+</body>
+</html>
